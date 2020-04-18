@@ -1,0 +1,8 @@
+console.log("Connected with listener.js");
+
+
+var buttom = document.getElementById("button");
+
+buttom.addEventListener("click", function(){
+    buttom.style.background = "purple";
+});

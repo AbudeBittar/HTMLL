@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radios & checkboxes & selects</title>
+</head>
+<body>
+    <div>
+        <h1>Radios</h1>
+        <form action="">
+            <div>
+                <!-- for == id -->
+                <!-- name must be identity for all dependent choices -->
+                <!-- value is used to check the data to the url -->
+                <h3>Do you prefer cats or dogs?</h3>
+                <label for="dogs">Dogs: </label>
+                <input name="petChoice" id="dogs" type="radio" value="DOGS">
+                <label for="cats">Cats: </label>
+                <input name="petChoice" id="cats" type="radio" value="CATS">
+                <button>Go!</button>
+            </div>
+        </form>
+    </div>
+    <br><hr>
+    <div>
+        <h1>Selects</h1>
+        <form action="">
+            <h3>Where are you from?</h3>
+            <select name="country" id="">
+                <option value="England">England</option>
+                <option value="Germany" selected>Germany</option>
+                <option value="France">France</option>
+            </select>
+            <button>Go!</button>
+        </form>
+    </div>
+    <br><hr>
+    <div>
+        <label for="message">message: </label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button>Go!</button>
+    </div>
+</body>
+</html>

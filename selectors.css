@@ -1,0 +1,35 @@
+    /* element */
+    li {
+    }
+    /* class */
+    .hello {
+    }
+    /* id */
+    #name {
+    }
+    /* star:  gves everything an element */
+    * {
+        border: 1px solid lightgray;
+    }
+    /* descentant (nackfahre تنازلي ): takes tow or more tag names or selectors and chain (kettet) them together */
+    li a {  /* all all a-tags that's included in a li-tag*/
+        color: red;
+    }
+    /* adjacent (benachbart): lets us select elements that come after another [So not nested inside like this is an ally nested in a well] */
+    h4 + ul {  /* select all ul-tages that come after an h4-tags */
+        border: 4px solid red ;
+    }
+    /* attribute: select elements based off of any attribute e.g. imgs links and so on*/
+    a[href="http://www.google.com"] { /* select every anchor tag with href equal to google */
+        background: blue;
+    }
+    input[type="text"] {
+
+    }
+    /* 
+    nth of type: it takes a number like three or five and then it selects every nth of a specific element.
+    So if I want to select every fifth div or every second ally or the fifth the tenth paragraph on a pag.
+    */
+    li:nth-of-type(odd) {
+        background: purple;
+    }
